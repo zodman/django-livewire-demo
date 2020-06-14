@@ -15,5 +15,6 @@ urlpatterns = [
          name="search_post"),
     path('show-posts/', TV.as_view(template_name="show_post.html"),
          name="show_post"),
+    path('register', TV.as_view(template_name="register.html")),
     path('', TV.as_view(template_name="index.html"), name="index"),
 ] + staticfiles_urlpatterns()
